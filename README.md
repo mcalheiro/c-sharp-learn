@@ -1,4 +1,4 @@
-# C#-learning
+# C# practice
 This repo contains code from [some basic C# training](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULFjxrOagaERVAMbmG20Xe). C# is a compiled, strongly typed language.
 
 ## Requirements
@@ -224,4 +224,22 @@ var nums = new List<int> { 1, 0, -3, 100, 76, -56 };
 Console.WriteLine(nums.IndexOf(-56));
 nums.Sort();
 Console.WriteLine(nums.IndexOf(-56));
+```
+
+## LINQ: Language Integrated Query
+This is a SQL-like way of filtering data. Pretty cool. Imperative programming. Given a data source, we can use an enumerable to fetch the data that corresponds to some criteria.
+```c#
+// LINQ
+
+List<int> scores = [97, 92, 81, 60]; // Data source
+
+IEnumerable<int> scoreQuery = 
+    from score in scores 
+    where score < 80
+    select score;
+
+foreach (var score in scoreQuery)
+{
+    Console.WriteLine(score);
+}
 ```

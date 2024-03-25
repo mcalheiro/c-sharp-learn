@@ -1,20 +1,13 @@
-﻿// Sorting
-var names = new List<string> {
-    "Zoro", "Luffy", 
-    "Sanji", "Brook", 
-    "Chopper", "Usopp",
-    "Robin", "Nami",
-    "Franky", "Jinbe"};
+﻿// LINQ
 
-names.Sort();
+List<int> scores = [97, 92, 81, 60];
 
-foreach (var name in names)
+IEnumerable<int> scoreQuery = 
+    from score in scores 
+    where score < 80
+    select score;
+
+foreach (var score in scoreQuery)
 {
-    Console.WriteLine(name);
+    Console.WriteLine(score);
 }
-
-// Searching
-var nums = new List<int> { 1, 0, -3, 100, 76, -56 };
-Console.WriteLine(nums.IndexOf(-56));
-nums.Sort();
-Console.WriteLine(nums.IndexOf(-56));
