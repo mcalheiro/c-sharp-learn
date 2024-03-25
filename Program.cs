@@ -1,12 +1,5 @@
-﻿// While loops
+﻿// For loops
 
-int counter = 0;
-
-while (counter < 10) {
-    Console.WriteLine(counter);
-    counter++;
+for (int i = 0; i < 10; i++) {
+    Console.WriteLine(i);
 }
-
-do {
-    Console.WriteLine($"The next value is {counter}");
-} while (false);

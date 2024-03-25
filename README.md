@@ -120,7 +120,6 @@ do {
 Here are some simple examples:
 ```c#
 // While loops
-
 int counter = 0;
 
 while (counter < 10) {
@@ -128,9 +127,15 @@ while (counter < 10) {
     counter++;
 }
 
+//Do-while
 do {
     Console.WriteLine($"The next value is {counter}");
 } while (false);
 ```
 
-**For** loops 
+**For** loops are the best, right? Here it is similar to standard C. Here's how to do it
+```c#
+for (int i = 0; i < 10; i++) {
+    Console.WriteLine(i);
+}
+```
