@@ -269,4 +269,10 @@ IEnumerable<int> highScores =
 
 Console.WriteLine(highScores.Count());
 ```
-It is also possible to use ```Sum()``` and many more methods. Feel free to experiment.
+It is also possible to use ```Sum()``` and many more methods. Feel free to experiment. Another way of achieving similar results without writing as much is:
+```c#
+// LINQ but type less
+List<int> scores = [97, 92, 81, 60];
+var scoreQuery = scores.Where(s => s > 80).Sum();
+Console.WriteLine(scoreQuery);
+``` 
