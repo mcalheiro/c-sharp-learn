@@ -228,18 +228,45 @@ Console.WriteLine(nums.IndexOf(-56));
 
 ## LINQ: Language Integrated Query
 This is a SQL-like way of filtering data. Pretty cool. Imperative programming. Given a data source, we can use an enumerable to fetch the data that corresponds to some criteria.
+
+*Let's say we want to select all scores higher than 80 and display then **ordered**:*
 ```c#
 // LINQ
-
-List<int> scores = [97, 92, 81, 60]; // Data source
+List<int> scores = [97, 92, 81, 60];
 
 IEnumerable<int> scoreQuery = 
-    from score in scores 
-    where score < 80
-    select score;
+    from score in scores // Required
+    where score > 80 // Optional
+    orderby score ascending // Optional
+    select score; // Must have select in the end
 
 foreach (var score in scoreQuery)
 {
-    Console.WriteLine(score);
+    Console.Write($"{score} ");
 }
 ```
+or we can get strings instead of numbers:
+```c#
+// LINQ with strings
+IEnumerable<string> scoreStringsQuery =
+    from score in scores
+    where score > 80
+    orderby score descending
+    select $"Score: {score}";
+
+foreach (var s in scoreStringsQuery)
+{
+    Console.WriteLine(s);
+}
+```
+*What if we wish to know how many of scores satisfy some condition?*
+```c#
+// Counting with LINQ
+IEnumerable<int> highScores =
+    from score in scores
+    where score > 80
+    select score;
+
+Console.WriteLine(highScores.Count());
+```
+It is also possible to use ```Sum()``` and many more methods. Feel free to experiment.
