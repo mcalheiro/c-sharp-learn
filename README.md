@@ -80,23 +80,30 @@ We may also and else statements and nest if necessary,
 int a = 5;
 int b = 6;
 
-if (a + b > 10) {
+if (a + b > 10)
+{
     Console.WriteLine("Yes, it is");
-} else {
+} 
+else
+{
     Console.WriteLine("No, it's not");
 }
 
 // Booleans
 bool myTest = a + b > 10;
 
-if (myTest) {
+if (myTest)
+{
     Console.WriteLine(a + b);
 }
 
 // AND: &&, OR: ||
-if (myTest && a == b) {
+if (myTest && a == b)
+{
     Console.WriteLine("a == b");
-} else {
+} 
+else
+{
     Console.WriteLine("a != b");
 }
 ```
@@ -104,14 +111,16 @@ if (myTest && a == b) {
 ## Loops
 A **while** loop is as simple as:
 ```c#
-while (condition) {
+while (condition)
+{
     // Your code here
     ...
 }
 ```
 there is also **do**, in order to run the code at least once before checking the condition
 ```c#
-do {
+do
+{
     // Your code here
     ...
 } while (condition);
@@ -122,20 +131,44 @@ Here are some simple examples:
 // While loops
 int counter = 0;
 
-while (counter < 10) {
+while (counter < 10)
+{
     Console.WriteLine(counter);
     counter++;
 }
 
 //Do-while
-do {
+do
+{
     Console.WriteLine($"The next value is {counter}");
 } while (false);
 ```
 
 **For** loops are the best, right? Here it is similar to standard C. Here's how to do it
 ```c#
-for (int i = 0; i < 10; i++) {
+for (int i = 0; i < 10; i++)
+{
     Console.WriteLine(i);
+}
+```
+
+## Lists and collections
+List<T> is way to much typing but what can I do?
+```c#
+// Lists
+var names = new List<string> {"Ana", "Bruno", "Carlos"};
+// List<string> = new List<string> -> This is also fine but there's a lot repeated code.
+
+foreach (var name in names)
+{
+    Console.WriteLine(name);
+}
+
+Console.WriteLine("\n");
+names.Add("Daniel");
+
+for (int i = 0; i < names.Count; i++)
+{
+    Console.WriteLine(names[i]);
 }
 ```
