@@ -1,16 +1,24 @@
-﻿// Numbers
+﻿// Branching, conditions
 
-// Casting (type)var
-int a = 2100000000;
-int b = 2100000000;
-long c = (long)a + (long)b;
-Console.WriteLine(c);
+int a = 5;
+int b = 6;
 
-// Floats
-double e = 42.1; // Natural type
-float f = 7.90F; // Explicit type
-Console.WriteLine(e + f);
+if (a + b > 10) {
+    Console.WriteLine("Yes, it is");
+} else {
+    Console.WriteLine("No, it's not");
+}
 
-decimal g = 42.1M; // Natural type
-decimal h = 7.90M; // Explicit type
-Console.WriteLine(g + h);
+// Booleans
+bool myTest = a + b > 10;
+
+if (myTest) {
+    Console.WriteLine(a + b);
+}
+
+// AND: &&, OR: ||
+if (myTest && a == b) {
+    Console.WriteLine("a == b");
+} else {
+    Console.WriteLine("a != b");
+}

@@ -66,3 +66,37 @@ decimal g = 42.1M; // Natural type
 decimal h = 7.90M; // Explicit type
 Console.WriteLine(g + h);
 ```
+
+## Branching
+Creating an if in C# is easy. Just do:
+```c#
+if (condition) {
+    // Your code here
+    ...
+}
+``` 
+We may also and else statements and nest if necessary,
+```c#
+int a = 5;
+int b = 6;
+
+if (a + b > 10) {
+    Console.WriteLine("Yes, it is");
+} else {
+    Console.WriteLine("No, it's not");
+}
+
+// Booleans
+bool myTest = a + b > 10;
+
+if (myTest) {
+    Console.WriteLine(a + b);
+}
+
+// AND: &&, OR: ||
+if (myTest && a == b) {
+    Console.WriteLine("a == b");
+} else {
+    Console.WriteLine("a != b");
+}
+```
