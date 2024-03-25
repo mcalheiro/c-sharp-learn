@@ -100,3 +100,37 @@ if (myTest && a == b) {
     Console.WriteLine("a != b");
 }
 ```
+
+## Loops
+A **while** loop is as simple as:
+```c#
+while (condition) {
+    // Your code here
+    ...
+}
+```
+there is also **do**, in order to run the code at least once before checking the condition
+```c#
+do {
+    // Your code here
+    ...
+} while (condition);
+```
+
+Here are some simple examples:
+```c#
+// While loops
+
+int counter = 0;
+
+while (counter < 10) {
+    Console.WriteLine(counter);
+    counter++;
+}
+
+do {
+    Console.WriteLine($"The next value is {counter}");
+} while (false);
+```
+
+**For** loops 
