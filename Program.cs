@@ -1,28 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Numbers
 
-// Strings
-string firstPerson = "Maria";
-string secondPerson = "John";
-Console.WriteLine($"Their names are {firstPerson} and {secondPerson}");
+// Casting (type)var
+int a = 2100000000;
+int b = 2100000000;
+long c = (long)a + (long)b;
+Console.WriteLine(c);
 
-// String.Trim
-string spacedName = "       Hi there       ";
-Console.WriteLine($"No trim: {spacedName}");
-Console.WriteLine($"TrimStart: {spacedName.TrimStart()}");
-Console.WriteLine($"TrimEnd: {spacedName.TrimEnd()}");
-Console.WriteLine($"Trim: {spacedName.Trim()}");
+// Floats
+double e = 42.1; // Natural type
+float f = 7.90F; // Explicit type
+Console.WriteLine(e + f);
 
-// String.Replace
-string names = $"Their names are {firstPerson} and {secondPerson}";
-Console.WriteLine(names.Replace("John", "Marco"));
-Console.WriteLine(names);
-
-// String.Contain
-Console.WriteLine(names.Contains("Maria"));
-Console.WriteLine(names.Contains("Julian"));
-
-// Formatting and length
-Console.WriteLine(names.ToUpper());
-Console.WriteLine(names.ToLower());
-Console.WriteLine(names.Length);
+decimal g = 42.1M; // Natural type
+decimal h = 7.90M; // Explicit type
+Console.WriteLine(g + h);
