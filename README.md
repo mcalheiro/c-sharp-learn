@@ -156,6 +156,8 @@ for (int i = 0; i < 10; i++)
 List<T> is way to much typing but what can I do?
 ```c#
 // Lists
+using System.Diagnostics;
+
 var names = new List<string> {"Ana", "Bruno", "Carlos"};
 // List<string> = new List<string> -> This is also fine but there's a lot repeated code.
 
@@ -166,9 +168,37 @@ foreach (var name in names)
 
 Console.WriteLine("\n");
 names.Add("Daniel");
+names.Add("Ester");
+names.Add("Felipe");
 
-for (int i = 0; i < names.Count; i++)
+// Checking the last value
+Console.WriteLine($"Last name is {names[^1]}");
+
+// Checking a range [inclusive..exclusive]
+foreach (var name in names[2..4])
 {
-    Console.WriteLine(names[i]);
+    Console.WriteLine(name.ToUpper());
 }
 ```
+
+Arrays are fixed in length. We may change the content of the original data, but we cannot add or remove elements.
+
+```c#
+// Arrays
+Console.WriteLine("\n");
+
+var otherNames = new string[] {"Ana", "Bruno", "Carlos"};
+foreach (var name in otherNames)
+{
+    Console.WriteLine(name);
+}
+```
+
+In order to add elements, we must make a new array with the contents of the original and append the new data.
+
+```c#
+// Create a new array and add a name to it
+otherNames = [..otherNames, "Daniel"];
+```
+
+## Sorting and searching
