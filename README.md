@@ -62,8 +62,8 @@ double e = 42.1; // Natural type
 float f = 7.90F; // Explicit type
 Console.WriteLine(e + f);
 
-decimal g = 42.1M; // Natural type
-decimal h = 7.90M; // Explicit type
+decimal g = 42.1M;
+decimal h = 7.90M;
 Console.WriteLine(g + h);
 ```
 
@@ -276,3 +276,25 @@ List<int> scores = [97, 92, 81, 60];
 var scoreQuery = scores.Where(s => s > 80).Sum();
 Console.WriteLine(scoreQuery);
 ``` 
+
+## Object-oriented
+Apparently, it is pretty simple to implement a class in newer C# versions (I am using version 12, with .NET 8.x).
+```c#
+// Creating a class
+class Person(string firstName, string lastName, DateOnly birthday)
+{
+    public string FirstName { get; } = firstName;
+    public string LastName { get; } = lastName;
+    public DateOnly Birthday { get; } = birthday;
+}
+```
+
+Then, we can instantiate objects and do whatever is possible with them
+```c#
+// OOP
+var p1 = new Person("Joao", "Maia", new DateOnly(1980, 1, 1));
+var p2 = new Person("Maria", "Maia", new DateOnly(1990, 1, 1));
+
+List<Person> people = [p1, p2];
+Console.WriteLine(people.Count);
+```
