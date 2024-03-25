@@ -1,0 +1,14 @@
+D:\Users\Mauricio\code\c-sharp-learn\bin\Debug\net8.0\c-sharp-learn.exe
+D:\Users\Mauricio\code\c-sharp-learn\bin\Debug\net8.0\c-sharp-learn.deps.json
+D:\Users\Mauricio\code\c-sharp-learn\bin\Debug\net8.0\c-sharp-learn.runtimeconfig.json
+D:\Users\Mauricio\code\c-sharp-learn\bin\Debug\net8.0\c-sharp-learn.dll
+D:\Users\Mauricio\code\c-sharp-learn\bin\Debug\net8.0\c-sharp-learn.pdb
+D:\Users\Mauricio\code\c-sharp-learn\obj\Debug\net8.0\c-sharp-learn.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Mauricio\code\c-sharp-learn\obj\Debug\net8.0\c-sharp-learn.AssemblyInfoInputs.cache
+D:\Users\Mauricio\code\c-sharp-learn\obj\Debug\net8.0\c-sharp-learn.AssemblyInfo.cs
+D:\Users\Mauricio\code\c-sharp-learn\obj\Debug\net8.0\c-sharp-learn.csproj.CoreCompileInputs.cache
+D:\Users\Mauricio\code\c-sharp-learn\obj\Debug\net8.0\c-sharp-learn.dll
+D:\Users\Mauricio\code\c-sharp-learn\obj\Debug\net8.0\refint\c-sharp-learn.dll
+D:\Users\Mauricio\code\c-sharp-learn\obj\Debug\net8.0\c-sharp-learn.pdb
+D:\Users\Mauricio\code\c-sharp-learn\obj\Debug\net8.0\c-sharp-learn.genruntimeconfig.cache
+D:\Users\Mauricio\code\c-sharp-learn\obj\Debug\net8.0\ref\c-sharp-learn.dll
